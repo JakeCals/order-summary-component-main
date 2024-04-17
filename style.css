@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  background-color: var(--pale-blue);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 375px;
+  background-color: white;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.card .hero-img {
+  width: 100%;
+}
+
+.information-card {
+  padding: 1.5em 2.5em 1em;
+  text-align: center;
+}
+
+.title-card {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.description-card {
+  color: var(--desaturated-blue);
+  margin-top: 0.8em;
+  font-weight: 500;
+}
+
+.main-card {
+  padding: 0 2em 2em 2em;
+}
+
+.plan-card {
+  background-color: var(--very-pale-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  border-radius: 0.7em;
+}
+
+.middle-plan {
+  display: flex;
+  flex-direction: column;
+}
+
+.middle-plan .title-plan {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.middle-plan .price-plan {
+  font-weight: 600;
+  color: var(--desaturated-blue);
+}
+
+.plan-card .btn-change {
+  font-weight: 900;
+  color: var(--bright-blue);
+  transition: 0.5s;
+}
+
+.plan-card .btn-change:hover {
+  text-decoration: none;
+  color: hsl(245, 75%, 70%);
+}
+
+.btn {
+  display: block;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn.btn-payment {
+  padding: 0.8em;
+  background-color: var(--bright-blue);
+  color: var(--very-pale-blue);
+  border-radius: 0.7em;
+  margin: 1.5em 0;
+  transition: 0.5s;
+}
+
+.btn.btn-payment:hover {
+  background-color: hsl(245, 75%, 70%);
+}
+
+.btn.btn-cancel {
+  color: var(--desaturated-blue);
+  transition: 0.3s;
+}
+
+.btn.btn-cancel:hover {
+  color: var(--dark-blue);
+}
